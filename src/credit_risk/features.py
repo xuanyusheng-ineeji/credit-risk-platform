@@ -106,11 +106,11 @@ def engineer_features(raw: Union[dict, pd.DataFrame]) -> pd.DataFrame:
     df["MonthlyIncome"]  = df["MonthlyIncome"].clip(upper=INCOME_CAP)
 
     # ── 4. Fill missing values ───────────────────────────────────────────────
-    df["age"]                = df["age"].fillna(AGE_MEDIAN)
-    df["MonthlyIncome"]      = df["MonthlyIncome"].fillna(INCOME_MEDIAN)
-    df["NumberOfDependents"] = df["NumberOfDependents"].fillna(DEP_MEDIAN)
+    df["age"]                = df["age"].fillna(AGE_MEDIAN).astype(float)
+    df["MonthlyIncome"]      = df["MonthlyIncome"].fillna(INCOME_MEDIAN).astype(float)
+    df["NumberOfDependents"] = df["NumberOfDependents"].fillna(DEP_MEDIAN).astype(float)
     for col in LATE_COLS:
-        df[col] = df[col].fillna(0.0)
+        df[col] = df[col].fillna(0.0).astype(float)
 
     # ── 5. Delinquency binary features ──────────────────────────────────────
     df["ever_late_30"] = (df["NumberOfTime30-59DaysPastDueNotWorse"] > 0).astype(int)

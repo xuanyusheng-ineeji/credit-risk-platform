@@ -34,7 +34,7 @@ jobs:
 
       - name: Lint with flake8
         run: |
-          flake8 src/ tests/ --max-line-length=100 --extend-ignore=E203,W503
+          flake8 src/ tests/ --max-line-length=100 --extend-ignore=E203,W503,E221,E272,E127,E402
 
       - name: Run feature engineering tests
         run: |

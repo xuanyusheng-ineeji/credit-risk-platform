@@ -1,13 +1,12 @@
 """Unit tests for feature engineering — no model files required."""
 import pytest
-import numpy as np
 import pandas as pd
 
 import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from credit_risk.features import engineer_features, FEATURE_ORDER, RAW_FEATURES
+from credit_risk.features import engineer_features, FEATURE_ORDER  # noqa: E402
 
 
 def _sample() -> dict:

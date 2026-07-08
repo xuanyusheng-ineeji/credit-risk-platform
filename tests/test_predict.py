@@ -6,7 +6,7 @@ from pathlib import Path
 import sys
 sys.path.insert(0, str(Path(__file__).parent.parent / "src"))
 
-from credit_risk.features import engineer_features
+from credit_risk.features import engineer_features  # noqa: E402
 
 MODELS_DIR = Path(__file__).parent.parent / "models"
 models_available = (MODELS_DIR / "xgboost_model.pkl").exists()

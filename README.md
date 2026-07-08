@@ -1,6 +1,6 @@
 # Credit Risk Assessment Platform
 
-[![CI](https://github.com/YOUR_USERNAME/credit-risk-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/YOUR_USERNAME/credit-risk-platform/actions/workflows/ci.yml)
+[![CI](https://github.com/xuanyusheng-ineeji/credit-risk-platform/actions/workflows/ci.yml/badge.svg)](https://github.com/xuanyusheng-ineeji/credit-risk-platform/actions/workflows/ci.yml)
 [![Python](https://img.shields.io/badge/python-3.10%20%7C%203.11-blue)](https://www.python.org)
 [![Streamlit](https://img.shields.io/badge/Streamlit-1.28%2B-red)](https://streamlit.io)
 [![XGBoost](https://img.shields.io/badge/XGBoost-2.0%2B-orange)](https://xgboost.readthedocs.io)

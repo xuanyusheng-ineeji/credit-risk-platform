@@ -14,3 +14,6 @@ where = ["src"]
 [tool.pytest.ini_options]
 testpaths = ["tests"]
 addopts = "-v"
+
+[tool.coverage.run]
+omit = ["src/credit_risk/predict.py"]

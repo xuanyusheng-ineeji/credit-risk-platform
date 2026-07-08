@@ -48,7 +48,6 @@ jobs:
         run: |
           pytest tests/test_features.py \
             --cov=credit_risk \
-            --cov-omit=src/credit_risk/predict.py \
             --cov-report=term-missing \
             --cov-report=xml \
             --cov-fail-under=95

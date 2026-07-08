@@ -1,0 +1,15 @@
+.git
+.gitignore
+__pycache__
+**/__pycache__
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache
+.coverage
+htmlcov/
+notebooks/
+data/cs-training.csv
+data/cs-test.csv
+*.ipynb_checkpoints
+README.md

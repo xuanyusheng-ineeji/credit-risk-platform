@@ -1,6 +1,10 @@
 # Python
 __pycache__/
 *.pyc
+*.egg-info/
+*.egg-info
+dist/
+build/
 
 # Virtual Environment
 venv/
@@ -22,6 +26,7 @@ models/*.joblib
 
 # Data
 data/*.csv
+data/processed/*.csv
 
 # Logs
 *.log
